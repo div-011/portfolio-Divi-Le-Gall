@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <a href="#" class="nav-home" aria-label="Home">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5z" />
+          <path d="M9 21V12h6v9" />
+        </svg>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#formation">Formation</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="presentation">
+      <h1 class="hero-name">Divi<br>Le Gall</h1>
+      <p class="hero-subtitle">Étudiant en BUT informatique - IUT de Lannion</p>
+      <div class="hero-tag">Disponible pour alternance</div>
+      <p>Bonjour je m'appelle Divi Le Gall, j'ai 20 ans et je suis étudiant à l'IUT de Lannion en BUT Informatique.
+        Originaire de Brest, je suis actuellement à la recherche d'une alternance en developpement d'application dans la
+        region Brestoise.</p>
+      <div class="hero-cta">
+        <button class="btn-primary" href="/fic/DIVI_LEGALL_CV.pdf" onclick="telecharger()">
+          Télécharger mon CV
+        </button>
+      </div>
+    </section>
+
+    <section id="formation">
+      <p class="section-label">Formation</p>
+    
+      <div class="formation-grid">
+    
+        <!-- Diplôme en cours -->
+        <div class="formation-card formation-card--main">
+          <div class="formation-card-header">
+            <span class="formation-status">En cours</span>
+            <span class="formation-year">2025 — 2028</span>
+          </div>
+          <h3 class="formation-title">BUT Informatique</h3>
+          <p class="formation-school">IUT de Lannion — Université de Rennes</p>
+          <div class="formation-links">
+            <a href="https://iut-lannion.univ-rennes.fr" target="_blank" class="formation-link">
+              <span class="formation-link-dot"></span>Site de l'IUT
+            </a>
+            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi1ltiZ19eUAxWmBfsDHSQWD1UQFnoECA4QAQ&url=https%3A%2F%2Fwww.enseignementsup-recherche.gouv.fr%2Fsites%2Fdefault%2Ffiles%2Fannexe-2-licence-professionnelle-bachelor-universitaire-de-technologie-informatique-29016.pdf&usg=AOvVaw0KVw46hVXJVBKg_pgmgT_B&opi=89978449" target="_blank" class="formation-link">
+              <span class="formation-link-dot"></span>Programme BUT Informatique
+            </a>
+          </div>
+        </div>
+    
+        <!-- Diplômes obtenus -->
+        <div class="formation-diplomes">
+    
+          <div class="formation-card">
+            <div class="formation-card-header">
+              <span class="formation-status formation-status--obtenu">Obtenu</span>
+              <span class="formation-year">2024</span>
+            </div>
+            <h3 class="formation-title">Baccalauréat Général</h3>
+            <p class="formation-school">Lycée Charles de Foucauld — Brest</p>
+            <div class="formation-tags">
+              <span class="formation-tag">Mathématiques</span>
+              <span class="formation-tag">NSI</span>
+              <span class="formation-tag">DNL Anglais</span>
+              <span class="formation-tag">Option Breton</span>
+            </div>
+          </div>
+    
+        </div>
+    
+      </div>
+    </section>
+
+    <section id="competences">
+      <p class="section-label">Acquis</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Front-end</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Back-end</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Outils</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">Figma</span>
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">Suite Microsoft</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projets">
+      <p class="section-label">Compétences</p>
+      <div class="projects-grid">
+        <div class="project-card" data-title="Développer des applications informatiques simples" data-desc="Réalisation du jeu Sokoban en langage C dans un terminal. Ce projet m'a permis de manipuler les structures de données,
+           la gestion mémoire et la logique algorithmique pour recréer un jeu complet jouable en ligne de commande."
+          data-img="/img/sokoban.png" data-tech="C,VS Code" data-file="/fic/sokoban.zip">
+          <div class="project-thumb">
+            <img src="/img/sokoban.png" alt="sokoban">
+          </div>
+          <div class="project-info">
+            <h3>Développer des applications informatiques simples</h3>
+            <p>Réalisation du jeu sokoban dans un terminal</p>
+            <div class="project-tech">
+              <span class="tech-badge">C</span>
+              <span class="tech-badge">VS Code</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn-voir-plus">Voir plus →</button>
+          </div>
+        </div>
+        <div class="project-card" data-title="Appréhender et construire des algorithmes" data-desc="Exploration du problème du cavalier en langage python. Nous devions faire en sorte que le cavalier d'un echiquier puisse visiter toutes les cases du 
+          plateau sans jamais repasser par une case déjà visitée. Ce projet m'a permis de comprendre les algorithmes de backtracking, d'utiliser les notions abordées en graphes et d'explorer différentes stratégies pour résoudre ce problème."
+       data-img="/img/cavalier.png" data-tech="python,VS Code" data-file="/fic/cavalier.zip">
+          <div class="project-thumb">
+            <img src="/img/cavalier.png" alt="cavalier">
+          </div>
+          <div class="project-info">
+            <h3>Appréhender et construire des algorithmes</h3>
+            <p>Exploration du problème du cavalier en langage python</p>
+            <div class="project-tech">
+              <span class="tech-badge">python</span>
+              <span class="tech-badge">VS Code</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn-voir-plus">Voir plus →</button>
+          </div>
+        </div>
+        <div class="project-card" data-title="Installer et configurer un poste de travail" data-desc="Réalisation d'une chaine de traitement de fichiers automaitisée à l'aide de Docker. Ce projet m'a permis de comprendre les concepts de conteneurisation,
+         d'automatisation et de gestion d'environnements de développement pour faciliter le travail en équipe."
+     data-img="/img/docker.png" data-tech="Docker, Bash, PHP, GIT" data-file="/fic/convert.zip">
+          <div class="project-thumb">
+            <img src="/img/docker.png" alt="docker_logo">
+          </div>
+          <div class="project-info" >
+            <h3>Installer et configurer un poste de travail</h3>
+            <p>Réalisation d'une chaine de traitement de fichiers automaitisée à l'aide de Docker</p>
+            <div class="project-tech">
+              <span class="tech-badge">Docker</span>
+              <span class="tech-badge">Bash</span>
+              <span class="tech-badge">PHP</span>
+              <span class="tech-badge">GIT</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn-voir-plus">Voir plus →</button>
+          </div>
+        </div>
+        <div class="project-card" data-title="Concevoir et mettre en place une base de données à partir d'un cahier des charges client<" data-desc="Réaliser la base de données d'un comparateur d'offre d'électricité. Ce projet m'a permis de comprendre les concepts de modélisation de données,
+         de conception de schémas relationnels et d'implémentation de bases de données pour répondre à des besoins spécifiques."
+     data-img="/img/UML_logo.svg.png" data-tech="UML, Tutorial D" data-file="/fic/SAE_1.04.zip">
+          <div class="project-thumb">
+            <img src="/img/UML_logo.svg.png" alt="UML_logo">
+          </div>
+          <div class="project-info">
+            <h3>Concevoir et mettre en place une base de données à partir d'un cahier des charges client</h3>
+            <p>Réaliser la base de données d'un comparateur d'offre d'électricité</p>
+            <div class="project-tech">
+              <span class="tech-badge">UML</span>
+              <span class="tech-badge">Tutorial D</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn-voir-plus">Voir plus →</button>
+          </div>
+        </div>
+        <div class="project-card" data-title="Identifier les besions métiers des clients et des utilisateurs" data-desc="Réalisation d'un site vitrine touristique. Ce projet m'a permis de comprendre les étapes de collecte des besoins,
+         de conception d'interface utilisateur et de la chaine de production d'une application web pour répondre aux attentes des clients et des utilisateurs finaux."
+     data-img="/img/web.jpg" data-tech="HTML, CSS, Figma, GIT" data-file="">
+          <div class="project-thumb">
+            <img src="/img/web.jpg" alt="web_logo">
+          </div>
+          <div class="project-info">
+            <h3>Identifier les besions métiers des clients et des utilisateurs</h3>
+            <p>Réalisation d'un site vitrine touristique pour un ministère du tourisme</p>
+            <div class="project-tech">
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">Figma</span>
+              <span class="tech-badge">GIT</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn-voir-plus">Voir plus →</button>
+          </div>
+        </div>
+        <div class="project-card" data-title="Identifier ses aptitudes pour travailler dans une équipe<" data-desc="Etude de la responsabilité sociétale des entreprises.
+         Ce projet m'a permis de comprendre les enjeux de la responsabilité sociétale des entreprises, d'analyser les pratiques existantes et de mettre en place des outils
+          de travail collaboratif comme gantt ou trello pour favoriser la communication et la coordination au sein d'une équipe."
+     data-img="/img/equipe.jpeg" data-tech="Canva, Trello, Gantt" data-file="/fic/SAE1.06.zip">
+          <div class="project-thumb">
+            <img src="/img/equipe.jpeg" alt="docker_logo">
+          </div>
+          <div class="project-info">
+            <h3>Identifier ses aptitudes pour travailler dans une équipe</h3>
+            <p>Etude de la responsabilité sociétale des entreprises</p>
+            <div class="project-tech">
+              <span class="tech-badge">Canva</span>
+              <span class="tech-badge">Trello</span>
+              <span class="tech-badge">Gantt</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <button class="btn-voir-plus">Voir plus →</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section-label">Contact</p>
+      <div class="contact-layout">
+        <div class="contact-text">
+          <h2>Me joindre </h2>
+          <p>Vous avez un projet, une question ou une opportunité ? N'hésitez pas à me contacter !</p>
+          <div class="contact-links">
+            <a href="mailto:divi.legall29@gmail.com" class="contact-link"><span class="contact-link-dot"></span>Envoyer
+              un email</a>
+            <a href="https://www.linkedin.com/in/divi-le-gall-b75b99303/" class="contact-link"><span
+                class="contact-link-dot"></span>LinkedIn</a>
+            <a href="#" class="contact-link"><span class="contact-link-dot"></span>GitHub</a>
+          </div>
+        </div>
+        <div class="contact-form">
+          <div class="form-field">
+            <label>Nom</label>
+            <input type="text" placeholder="Votre nom">
+          </div>
+          <div class="form-field">
+            <label>Email</label>
+            <input type="email" placeholder="Votre email">
+          </div>
+          <div class="form-field">
+            <label>Message</label>
+            <textarea rows="4" placeholder="Votre message"></textarea>
+          </div>
+          <button class="btn-primary">Envoyer</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- Modal -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <div class="modal-thumb">
+        <img id="modal-img" src="" alt="">
+      </div>
+      <div class="modal-body">
+        <div class="modal-header">
+          <h2 class="modal-title" id="modal-title"></h2>
+          <button class="modal-close" id="modal-close" aria-label="Fermer">✕</button>
+        </div>
+        <p class="modal-desc" id="modal-desc"></p>
+        <div class="modal-tech" id="modal-tech"></div>
+        <div class="modal-footer">
+          <a id="modal-download" href="#" download class="btn-download">
+            Télécharger ↓
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function telecharger() {
+      const lien = document.createElement("a");
+      lien.href = "DIVI_LEGALL_CV.pdf";
+      lien.download = "DIVI_LEGALL_CV.pdf";
+      lien.click();
+    }
+  
+    const overlay = document.getElementById('modal-overlay');
+    const modalImg = document.getElementById('modal-img');
+    const modalTitle = document.getElementById('modal-title');
+    const modalDesc = document.getElementById('modal-desc');
+    const modalTech = document.getElementById('modal-tech');
+    const dlBtn = document.getElementById('modal-download');
+  
+    document.querySelectorAll('.project-card').forEach(card => {
+      const btn = card.querySelector('.btn-voir-plus');
+      if (!btn) return; 
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        modalImg.src = card.dataset.img;
+        modalImg.alt = card.dataset.title;
+        modalTitle.textContent = card.dataset.title;
+        modalDesc.textContent = card.dataset.desc;
+        modalTech.innerHTML = card.dataset.tech
+          .split(',')
+          .map(t => `<span class="tech-badge">${t.trim()}</span>`)
+          .join('');
+  
+        if (card.dataset.file) {
+          dlBtn.href = card.dataset.file;
+          dlBtn.download = card.dataset.filename || '';
+          dlBtn.style.display = 'inline-block';
+        } else {
+          dlBtn.style.display = 'none';
+        }
+  
+        overlay.classList.add('open');
+      });
+    });
+  
+    document.getElementById('modal-close').addEventListener('click', () => {
+      overlay.classList.remove('open');
+    });
+  
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) overlay.classList.remove('open');
+    });
+  
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') overlay.classList.remove('open');
+    });
+  </script>
+
+</body>
+
+</html>
